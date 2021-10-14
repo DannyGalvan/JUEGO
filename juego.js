@@ -50,7 +50,7 @@ function win(userChoice, cpuChoice)
   userScore++;
   userScore_span.innerHTML = userScore;
   cpuScore_span.innerHTML = cpuScore;
-  resultado.innerHTML = `<h1 class="ganador">Ganaste</h1> <p class="ganador">CPU escogio <strong>${cpuChoice}</strong></p>`;
+  resultado.innerHTML = `<h1 class="ganador">Ganaste</h1> <p class="ganador">CPU escogio <strong>${cpuChoice}</strong></p> <p class="ganador">Tú escogiste <strong>${userChoice}</strong></p>`;
   modal.style.display = 'block';
 }
 
@@ -59,7 +59,7 @@ function lose(userChoice, cpuChoice)
   cpuScore++;
   userScore_span.innerHTML = userScore;
   cpuScore_span.innerHTML = cpuScore;
-  resultado.innerHTML = `<h1 class="perdedor">Perdiste</h1> <p class="perdedor">CPU escogio <strong>${cpuChoice}</strong></p>`;
+  resultado.innerHTML = `<h1 class="perdedor">Perdiste</h1> <p class="perdedor">CPU escogio <strong>${cpuChoice}</strong></p> <p class="perdedor">Tu escogiste <strong>${userChoice}</strong></p>`;
   modal.style.display = 'block';
 }
 
@@ -67,7 +67,7 @@ function draw(userChoice, cpuChoice)
  { 
   userScore_span.innerHTML = userScore;
   cpuScore_span.innerHTML = cpuScore;
-  resultado.innerHTML = `<h1 class="empate">Empataron</h1> <p class="empate">CPU escogio <strong>${cpuChoice}</strong></p>`;
+  resultado.innerHTML = `<h1 class="empate">Empataron</h1> <p class="empate">CPU escogio <strong>${cpuChoice}</strong></p> <p class="empate">Tú escogiste <strong>${userChoice}</strong></p>`;
   modal.style.display = 'block';
 }
 
