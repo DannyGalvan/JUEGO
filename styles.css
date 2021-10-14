@@ -1,0 +1,143 @@
+html{
+  font-size: 62.5%;
+}
+body
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.caracteristicas.co/wp-content/uploads/2017/05/universo-1-e1568576142428.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.header
+{
+  text-align: center;
+}
+main
+{
+  text-align: center;
+}
+.container
+{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.contador
+{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 5rem;
+}
+#user
+{
+  position: absolute;
+  left: 17%;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#compu
+{
+  position: absolute;
+  right: 17%;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section
+{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+}
+.badge
+{
+  height: 50px;
+  background-color: purple;
+  border-radius: 20px;
+  width: 15%;
+  color: white;
+  text-align: center;
+  border: 5px solid white;
+}
+img
+{
+  background-color: white;
+  height: 20vh;
+  width: 100%;
+  border-radius: 25px;
+}
+img:hover
+{
+  cursor: pointer;
+  transition: 700ms all;
+  transform: scale(1.1);
+}
+#restar
+{
+  height: 50px;
+  background-color: purple;
+  border-radius: 20px;
+  width: 15%;
+  color: white;
+}
+#restar:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 700ms all;
+  transform: scale(1.1);
+}
+.modal
+{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}
+.contenido-modal
+{
+  margin: 15% auto;
+  width: 25%;
+  height: 150px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  text-align: center;
+  padding: 4%;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+.ganador
+{
+  font-size: 1.5rem;
+  color: green;
+}
+
+.perdedor
+{
+  font-size: 1.5rem;
+  color: red;
+}
+.empate
+{
+  font-size: 1.5rem;
+  color: blue;
+}

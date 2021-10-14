@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PIEDRA PAPEL Y TIJERAS</title>
+</head>
+<body>
+    <header class="header">
+        <h1>EL MEJOR JUEGO DE PIEDRA PAPEL Y TIJERAS</h1>
+      </header>
+      <main>
+        <button onmousedown="sonido_button.play()" type="button" name="button" id="restar"><span><strong>Reset</strong></span></button>
+        <section class="sect">
+          <div class="container">
+            <div class="contador">
+              <span id="puntos_usuario">0</span>
+              <span>  :  </span>
+              <span id="puntos_cpu">0</span>
+            </div>
+            <div id="user" class="badge">
+              <span id="name_user" >usuario</span>
+            </div>
+            <div id="compu" class="badge">
+              <span>cpu</span>
+            </div>
+          </div>
+        </section>
+          <h1>Selecciona el objeto con el que quieres jugar.</h1>
+        <section class="section">
+          <div id="piedra" onmousedown="sonido_elementos.play()" class="">
+            <img src="https://img.icons8.com/ios/2x/ruby-gemstone.png" alt="">
+          </div>
+          <div id="papel" onmousedown="sonido_elementos.play()" class="">
+            <img src="https://img.icons8.com/ios/2x/palm-scan--v2.gif" alt="">
+          </div>
+          <div id="tijera" onmousedown="sonido_elementos.play()" class="">
+              <img src="https://img.icons8.com/ios/2x/hand-scissors--v2.gif" alt="">
+          </div>
+        </section>
+      </main>
+      <div class="modal" style="display: none;">
+        <div id="resultado" class="contenido-modal">
+  
+        </div>
+  
+      </div>
+      <script src="juego.js" charset="utf-8"></script>
+</body>
+</html>
