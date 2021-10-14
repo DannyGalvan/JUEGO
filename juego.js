@@ -64,7 +64,7 @@ function lose(userChoice, cpuChoice)
 }
 
 function draw(userChoice, cpuChoice)
- {
+ { 
   userScore_span.innerHTML = userScore;
   cpuScore_span.innerHTML = cpuScore;
   resultado.innerHTML = `<h1 class="empate">Empataron</h1> <p class="empate">CPU escogio <strong>${cpuChoice}</strong></p>`;
@@ -103,6 +103,8 @@ function limpiarModal(e)
 
 function resetear()
 {
+  userScore = 0;
+  cpuScore = 0;
   userScore_span.innerHTML = 0;
   cpuScore_span.innerHTML = 0;
 }
